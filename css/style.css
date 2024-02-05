@@ -1,23 +1,19 @@
 body {
+  font-family: "Inter";
+ 
 }
 header {
   display: flex;
   justify-content: space-between;
-  padding-top: 30px;
-  padding-bottom: 40px;
-  max-width: 1440;
-  width: 95%;
-  margin: 0 auto;
-  /* position: fixed;
-  top: 0;
-  background-color: #fff; */
-}
-nav > ul {
-  display: flex;
-  column-gap: 24px;
-  justify-content: center;
   align-items: center;
+  padding: 38px 32px;
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  width: 100%;
+  z-index: 2;
 }
+
 .brand {
   font-size: 25px;
   font-weight: 900;
@@ -29,6 +25,12 @@ nav > ul {
   font-size: 8px;
   vertical-align: top;
 }
+
+nav > ul {
+  display: flex;
+  column-gap: 24px;
+}
+
 nav > ul > li {
   font-size: 16px;
   font-weight: 500;
@@ -41,12 +43,14 @@ nav > ul > li {
   color: #fff;
   font-size: 16px;
   border-radius: 32px;
-  padding: 12px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 main {
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 50px;
+  margin: 144px 0 64px ;
 }
 .main-child1 {
   width: 490px;
@@ -61,16 +65,12 @@ main {
 main > div > h3 {
   font-size: 56px;
   font-weight: 900;
-  padding-bottom: 20px;
+  padding: 70px 0 24px 0;
 }
 main > div > p {
   font-size: 18px;
   font-weight: 400;
   padding-bottom: 40px;
-}
-main > div > h4 {
-  font-size: 14px;
-  font-weight: 600;
 }
 main > div > div {
   display: flex;
@@ -86,15 +86,16 @@ main > div > div {
   justify-content: center;
   column-gap: 10px;
   background-color: #f3f3f3;
+  padding: 64px 0;
 }
 
-.section1-child {
+.section1 > div {
   width: 360px;
   height: 128px;
   padding: 30px;
   margin-bottom: 40px;
 }
-.div-feature-flex {
+.section1 > div > div {
   display: flex;
 }
 .circle {
@@ -102,29 +103,26 @@ main > div > div {
   height: 40px;
   background-color: #000;
   border-radius: 50%;
-  margin-right: 17px;
-  margin-bottom: 10px;
+  margin: 0 16px 16px 0;
 }
-.div-feature-flex > h6 {
+.section1 > div > div > h6 {
   font-size: 16px;
   font-weight: 700;
   padding-top: 11px;
 }
-.div-feature-flex > p {
+.section1 > div > p {
   font-size: 16px;
   font-weight: 400;
-}
-.section2 {
-  height: 620px;
-  background-color: #000;
+  line-height: 24px;
 }
 
 .section2 {
   max-width: 1440px;
-  width: 100%;
+  height: 620px;
+  background-color: #000;
   display: flex;
   align-items: center;
-  justify-content: space-around; !
+  justify-content: space-around;
 }
 .section2-child1 {
   width: 503px;
@@ -132,55 +130,82 @@ main > div > div {
   background-image: url(../photos/img2.jpg);
   border-radius: 12px;
 }
-.section2-child2 {
-  color: #fff;
-}
-.section2-child2 > h2 {
+
+.section2 > div > h2 {
   width: 503px;
   font-size: 24px;
   font-weight: 900;
   line-height: 32px;
   letter-spacing: -0.10000000149011612px;
   margin-bottom: 15px;
+  color: #fff;
 }
-.section2-child2 > p {
-    width: 503px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: -0.1px;
-    margin-bottom: 8px;
-  }
-  .section3{
-    max-width: 1440px;
-    width: 100%;
-    height: 564px;
-    background-image: url(../photos/cta.png);
-  }
-  .section4{
-    max-width: 1440px;
-    width: 100%;
-    height: 336px;
-    background-color: #000;
-    color: #fff;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
- .section4 >div >  h3 {
-font-size: 16px;
-font-weight: 700;
-letter-spacing: 0.10000000149011612px;
-margin-bottom: 25px;
-  }
-  .section4 > div > ul > li {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-    
-    
-  }
-  .subscribe {
-    color: lightgray;
-  }
-  
+.section2 > div > p {
+  width: 503px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.1px;
+  margin-bottom: 8px;
+  color: #fff;
+}
+.section3 {
+  max-width: 1440px;
+  width: 100%;
+  height: 564px;
+  background-image: url(../photos/img3.png);
+  background-size: cover;
+  opacity: 0.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section3 h6 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 13px;
+}
+.section3 h1 {
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.section3 h2 {
+  color: black;
+  background-color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+.section4 {
+  max-width: 1440px;
+  width: 100%;
+  height: 336px;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.section4-flex {
+  display: flex;
+  column-gap: 141px;
+  margin: 0 auto;
+}
+.section4  h3 {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.10000000149011612px;
+  margin-bottom: 25px;
+}
+.section4 li {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.subscribe {
+  color: lightgray;
+}
