@@ -1,6 +1,5 @@
 body {
   font-family: "Inter";
- 
 }
 header {
   display: flex;
@@ -12,6 +11,22 @@ header {
   background-color: #fff;
   width: 100%;
   z-index: 2;
+}
+.burger-bar {
+  display: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 4px;
+}
+.burger-lines {
+  width: 15.12px;
+  border: 1px solid #fff;
 }
 
 .brand {
@@ -26,12 +41,12 @@ header {
   vertical-align: top;
 }
 
-nav > ul {
+nav ul {
   display: flex;
   column-gap: 24px;
 }
 
-nav > ul > li {
+nav li {
   font-size: 16px;
   font-weight: 500;
 }
@@ -50,16 +65,15 @@ nav > ul > li {
 main {
   display: flex;
   justify-content: space-evenly;
-  margin: 144px 0 64px ;
+  margin: 144px 0 64px;
 }
 .main-child1 {
   width: 490px;
-  height: 288px;
 }
 .main-child2 {
-  width: 490px;
+  width: 535px;
   height: 428px;
-  background-image: url(../photos/img.png);
+  background-image: url(../photos/sofa1440.jpg);
   background-repeat: no-repeat;
 }
 main > div > h3 {
@@ -80,6 +94,7 @@ main > div > div {
   padding-top: 7px;
   font-size: 14px;
   font-weight: 600;
+  width: 236px;
 }
 .section1 {
   display: flex;
@@ -118,6 +133,7 @@ main > div > div {
 
 .section2 {
   max-width: 1440px;
+  width: 100%;
   height: 620px;
   background-color: #000;
   display: flex;
@@ -127,7 +143,7 @@ main > div > div {
 .section2-child1 {
   width: 503px;
   height: 428px;
-  background-image: url(../photos/img2.jpg);
+  background-image: url(../photos/shelf1440.jpg);
   border-radius: 12px;
 }
 
@@ -136,11 +152,10 @@ main > div > div {
   font-size: 24px;
   font-weight: 900;
   line-height: 32px;
-  letter-spacing: -0.10000000149011612px;
   margin-bottom: 15px;
   color: #fff;
 }
-.section2 > div > p {
+.section2 p {
   width: 503px;
   font-size: 16px;
   font-weight: 400;
@@ -153,9 +168,7 @@ main > div > div {
   max-width: 1440px;
   width: 100%;
   height: 564px;
-  background-image: url(../photos/img3.png);
-  background-size: cover;
-  opacity: 0.6;
+  background-image: url(../photos/hall1440.jpg);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -189,19 +202,23 @@ main > div > div {
   color: #fff;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .section4-flex {
   display: flex;
   column-gap: 141px;
-  margin: 0 auto;
 }
-.section4  h3 {
+.lists {
+  display: flex;
+  column-gap: 141px;
+}
+.lists h3 {
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.10000000149011612px;
   margin-bottom: 25px;
 }
-.section4 li {
+.lists li {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
