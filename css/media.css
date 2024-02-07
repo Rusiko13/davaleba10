@@ -1,6 +1,9 @@
 /* for a bigger tablet 1024px */
 
 @media (max-width: 1024px) {
+  .brand {
+    margin-bottom: 20px;
+  }
   main,
   .section2 {
     display: flex;
@@ -30,22 +33,13 @@
     justify-content: space-between;
     margin-top: 64px;
   }
-  .paragraphs div {
-    width: 401.5px;
-  }
-  .paragraphs h2 {
-    width: 386.5px;
-  }
-  .section2 p {
-    width: 401px;
-  }
   .section2-child1 {
     background-image: url(../photos/shelf1024.jpg);
     width: 100%;
   }
-  .section2 {
+  /* .section2 {
     padding: 15px;
-  }
+  } */
   .lists div:last-child {
     display: none;
   }
@@ -64,8 +58,20 @@
 /* for tablet 744px */
 
 @media (max-width: 744px) {
+  .main{
+    width: 100%;
+  }
   .main-child1 {
-    width: 696px;
+    width: 100%;
+  }
+  .main-child1 h3,
+  .main-child1 p,
+  .main-child1 h4 {
+    width: 100%;
+  }
+  .main-child1 h3{
+    padding-top: 0;
+    width: 100%;
   }
   .main-child1 > h3,
   .section1 {
@@ -73,6 +79,7 @@
   }
   .main-child1 > div,
   .section1 {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -92,43 +99,49 @@
   }
   .section1 {
     padding-block: 0;
-    max-width: 744px;
     width: 100%;
     display: flex;
-    align-items: flex-start;
+    padding-top: 20px;
     text-align: center;
+    row-gap: 40px;
   }
-  .section1 p {
-    /* აქ რა უნდა რატო ვერ ვაძლევს 100 %ს?  */
-    /* width: 225%; */
-    background-color: yellow;
+  .section1 > div {
+    width: 100%;
+    padding: 0;
+    margin: 0;
   }
   .section1 > div > div {
-    /* width: 220%; */
     display: flex;
     justify-content: center;
-  }
-  .section2 {
-    max-width: 744px;
-    width: 100%;
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center; */
   }
   .section2-child1 {
     background-image: url(../photos/shelf744.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
+    width: 93%;
+    border-radius: 20px;
+    margin: 15px;
   }
+  .section2 {
+    max-width: 100%;
+    padding: 0;
+  }
+
   .paragraphs {
+    width: 100%;
     flex-direction: column;
+    align-items: center;
     text-align: center;
+    padding: 0;
   }
-  .section2 > div > h2,
+  .section2 h2,
   .section2 p {
-    width: 690px;
+    width: 100%;
+    margin: 0;
+  }
+  .section3 h1 {
+    text-align: center;
+    width: 95%;
   }
 }
 
@@ -151,52 +164,58 @@
     justify-content: center;
     row-gap: 4px;
   }
-  /* header > div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  } */
   header {
-    /* max-width: 375px; */
     width: 100%;
-    /* padding: 20px 24px; */
+    height: 101px;
+    padding-bottom: 0;
   }
   header > div > h1 {
     vertical-align: top;
   }
+
   .main-child1 {
-    max-width: 370px;
     width: 100%;
   }
+  .main-child1 > h3 {
+    padding-top: 0;
+  }
+  .main-child1 > div > h4,
+  .main-child1 p {
+    width: 327px;
+  }
   .main-child2 {
-    /* margin-top: 24px; */
     background-image: url(../photos/sofa375.jpg);
     max-width: 375x;
     width: 95%;
+    margin-bottom: 15px;
+    border-radius: 20px;
   }
-  .section1 {
-    padding-bottom: 24px;
+  .section2 {
+    width: 100%;
   }
+
   .section2-child1 {
     background-image: url(../photos/shelf375.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 195px;
-    width: 100%;
+    width: 93%;
+    margin: 24px;
   }
   .paragraphs {
-    /* flex-direction: column; */
+    width: 100%;
     text-align: center;
+    margin: 0;
   }
   .section2 > div > h2,
   .section2 p {
-    width: 307px;
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 15px;
   }
   .section3 {
     background-image: url(../photos/hall375.jpg);
-    /* width: 375px; */
     height: 500px;
     text-align: center;
   }
@@ -212,5 +231,9 @@
     justify-content: center;
     column-gap: 11px;
     margin-top: 25px;
+  }
+  .brand {
+    margin: 0;
+    padding: 0;
   }
 }
