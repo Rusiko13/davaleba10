@@ -11,21 +11,19 @@
     align-items: center;
   }
   .main-child1 {
-    width: 630px;
+    width: 100%;
     text-align: center;
   }
   .main-child1 div {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .main-child1 div > h4 {
     width: 100%;
   }
   .main-child2 {
     margin-top: 68px;
     background-image: url(../photos/sofa1024.jpg);
-    width: 940px;
+    width: 100%;
   }
   .paragraphs {
     display: flex;
